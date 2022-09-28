@@ -1,5 +1,12 @@
 # Exploring Gradient-based Multi-directional Controls in GANs
 
+> Zikun Chen<sup>1</sup>, Ruowei Jiang<sup>1</sup>, Brendan Duke<sup>1,2</sup>, Han Zhao<sup>3</sup>, Parham Aarabi<sup>1,2</sup><br>
+> <sup>1</sup>ModiFace Inc., <sup>2</sup>University of Toronto, <sup>3</sup>University of Illinois at Urbana-Champaign<br>
+> https://arxiv.org/abs/2209.00698
+>
+> <p align="justify"><b>Abstract:</b> <i>Generative Adversarial Networks (GANs) have been widely applied in modeling diverse image distributions. However, despite its impressive applications, the structure of the latent space in GANs largely remains as a black-box, leaving its controllable generation an open problem, especially when spurious correlations between different semantic attributes exist in the image distributions. To address this problem, previous methods typically learn linear directions or individual channels that control semantic attributes in the image space. However, they often suffer from imperfect disentanglement, or are unable to obtain multi-directional controls. In this work, in light of the above challenges, we propose a novel approach that discovers nonlinear controls, which enables multi-directional manipulation as well as effective disentanglement, based on gradient information in the learned GAN latent space. More specifically, we first learn interpolation directions by following the gradients from classification networks trained separately on the attributes, and then navigate the latent space by exclusively controlling channels activated for the target attribute in the learned directions. Empirically, with small training data, our approach is able to gain fine-grained controls over a diverse set of bi-directional and multi-directional attributes, and we showcase its ability to achieve disentanglement significantly better than state-of-the-art methods both qualitatively and quantitatively.
+.</i></p>
+
 ![image](./images/overview.png)
 
 **Figure:** *Our method's semantic interpolation in a nonlinear vector field.
